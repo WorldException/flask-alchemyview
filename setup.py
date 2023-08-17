@@ -19,7 +19,6 @@ install_requires = [
     'SQLAlchemy>=0.8.0',
     'Flask-Classy',
     'colander',
-    'dictalchemy',
 ]
 
 # Requirement for running tests
@@ -28,11 +27,11 @@ test_requires = install_requires + [
 ]
 
 extra = {}
-if sys.version_info >= (3,):
-    extra['use_2to3'] = True
+#if sys.version_info >= (3,):
+#    extra['use_2to3'] = True
 
 setup(name='Flask-AlchemyView',
-      version='0.1.4',
+      version='0.1.5b1',
       description="Simple ModelView for auto-generating Flask Views based on "
       "SQLAlchemy models",
       long_description=README,
